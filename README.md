@@ -14,6 +14,12 @@ Handles nexusmods.com download links and forwards them to a mod manager based on
 | assign | &lt;manager&gt; &lt;game&gt; | Assigns a game to be handled by a manager. &lt;manager&gt; has to be the exact same id as used in the "register" call. &lt;game&gt; has to be the exact domain name as used in nexusmods.com/... links. &lt;game&gt; can also be _ (underscore) to make this manager the fallback handler for all games that have no manager assigned | nxmproxy assign vortex _ |
 | url | &lt;nxm url&gt; | Starts a download | nxmproxy url nxm://somegame/mods/123/files/456 |
 
+# Configuration
+
+The configuration file for NXMProxy can be found at c:\users\\<username\>\AppData\Local\nxmproxy\config.toml.
+
+TOML is not too well known of a format but basically it's a properly standardized ini format, libraries should be available for most languages.
+
 # Comparison to the ModOrganizer NXMHandler
 
 NXMProxy is mostly a rewrite of NXMHandler with the goal to make it better to redistribute and integrate into different managers:
