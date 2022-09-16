@@ -1,3 +1,4 @@
+#![windows_subsystem = "windows"]
 use config_file::{Config};
 use directories::BaseDirs;
 use win32::{get_protocol_handler, parse_commandline, set_protocol_handler};
